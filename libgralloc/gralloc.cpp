@@ -24,7 +24,9 @@
 #include <sys/ioctl.h>
 #include <cutils/properties.h>
 
+#ifdef CONFIG_ANDROID_PMEM
 #include <linux/android_pmem.h>
+#endif
 
 #include "gr.h"
 #include "gpu.h"

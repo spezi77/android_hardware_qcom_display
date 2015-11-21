@@ -34,7 +34,9 @@
 
 #include <hardware/hardware.h>
 #include <hardware/gralloc.h>
+#ifdef CONFIG_ANDROID_PMEM
 #include <linux/android_pmem.h>
+#endif
 
 #include <gralloc_priv.h>
 #include "gr.h"
